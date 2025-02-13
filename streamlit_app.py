@@ -1,6 +1,15 @@
 import streamlit as st
 
-st.title("🎈 My new app")
+st.title("🍔Me gusta las hambunguezitas")
 st.write(
-    "Let's start building! For help and inspiration, head over to [docs.streamlit.io](https://docs.streamlit.io/)."
+    "A mi me gusta el pan con pan"
 )
+st.header("Esto es una cabecera")
+
+cantidad= st.slider("Elija un valor")
+
+print(id(cantidad))
+
+for i in range(cantidad):
+    st.button(f'Boton {i}')
+    st.checkbox(f'Opcion {i}')
